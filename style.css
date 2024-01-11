@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    text-align: center;
+    background-image: url("back.jpg");
+    background-size: contain;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.338); 
+    color: white;
+    padding: 19px 12px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#email_img{
+    height: 40px;
+    width: 70px;
+    background-image: url("@img.jpg");
+    background-size: cover;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+ul >li> a:hover{
+    color: rgb(192, 189, 205);
+}
+
+main{
+    min-height: 80vh; 
+}
+
+.outer_div{
+    width: 600px;
+    margin: 40px 400px 0 400px;
+    background-color: rgba(0, 0, 0, 0.774);
+    border: 0.8px solid white;
+}
+
+.container{ 
+    max-width: 80vw;
+    margin: auto;
+    padding: 9px 15px;
+    color: white;
+}
+
+.inner-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#inner-logo-img{
+    height: 40px;
+    width: 40px;
+    background-image: url("email-validation.png");
+    background-size: cover;
+}
+
+.container h1{
+    padding: 12px 0;
+    color: white;
+}
+
+input[type='text']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.852);
+}
+
+.btn{
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+
+footer{
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        text-align: center;
+    }
+    main{
+        min-height: 75vh; 
+    }
+
+    .container{
+        font-size: 12px; 
+    }
+
+    input[type='text'] {
+        min-width: 23vw;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+        font-size: 12px;
+    }
+    .logo span{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 15px;
+        filter: invert(1);
+    }
+
+    .outer_div{
+        width: 300px;
+        margin: 40px 20px 0 20px;
+        padding: 20px;
+    }
+  }
